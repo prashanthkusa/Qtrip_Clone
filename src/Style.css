@@ -1,72 +1,305 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+
+*{
+    /* border: 2px blue dotted; */
+    box-sizing: border-box;
+    padding: 0;
     margin: 0;
-    padding: 20px;
 }
-
-h1 {
-    color: #333;
-    text-align: center;
+body{
+   
+    
+    font-family: var(--bs-font-sans-serif);
+    
 }
-
-button {
-    background-color: #28a745; 
-    color: white; 
-    border: none;
-    border-radius: 5px;
-    padding: 10px 15px;
-    cursor: pointer;
-    margin: 10px 5px;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #218838; 
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-}
-
-th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
-}
-
-th {
-    background-color: #007bff; 
+h1,h3{
+   
     color: white;
 }
-
-tr:nth-child(even) {
-    background-color: #f2f2f2; 
+#search{
+    padding-left: 17px;
+    font-size: 1.18rem;
+    
+    outline: none;
+    border: none;
+     
+        border-radius: 10px;
+       
+        width: 900px;
+        height: 60px;
+    
 }
+#nav-div{
+    position: relative;
+    display: flex;
+    
 
-tr:hover {
-    background-color: #ddd;
+    background-color: #f8f9fa !important;
+    height: 56px;
+
 }
-
-#edit {
-    background-color:#28a745; 
+#nav-1{
+   width: 100px;
+   font-size: 1.3rem;
+   padding:15px 0px 0px 25px;
+  
 }
+li{
+    list-style-type: none;
+     
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 60px;
+    /* font-weight: 900; */
+    font-size: 1.3rem;
+   
 
-#edit:hover {
-    background-color: #218838 ;
 }
+ul{
+   top: 27%;
+    position: absolute;
+    right: 150px;
+    display: flex;
 
-#delete {
-    background-color: #dc3545; 
 }
-
-#delete:hover {
-    background-color: #c82333;
+#login-btn{
+   color: #d0840a;
 }
-
-p {
+ #btn-nav{
+    
+        background-color: #d0840a;
+        color: white;
+        
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        text-transform: uppercase;
+        position: absolute;
+        right: 10px;
+        top: 17%; 
+        padding: 8px 17px;
+   
+}
+#home{
+  padding-top: 50px;
+   
+    height: 70vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.pexels.com/photos/2422461/pexels-photo-2422461.jpeg?cs=srgb&dl=pexels-josh-hild-2422461.jpg&fm=jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* border-radius: 2px blue dotted ; */
+ }
+ .home-content{
+   
+    /* border-radius: 5px red dotted ; */
     text-align: center;
-    color: #666;
+
+
+
+ }
+ .suggestions {
+   list-style: none;
+   padding: 0;
+   margin-top: 184px;
+   width: 600px;
+   background-color: white;
+   border: 1px solid #ddd;
+   border-radius: 10px;
+   right: 30%;
+ }
+ 
+ .suggestions li {
+   padding: 10px;
+   cursor: pointer;
+ }
+ 
+ .suggestions li:hover {
+   background-color: #f0f0f0;
+ }
+ 
+ #card{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 70px;
+    margin-top: 50px;
+    
+ }
+ .card{
+    position: relative;
+    margin: 15px;
+    /* border: 1px blue dotted; */
+    width: 310px;
+    height: 448px;
+    border-radius: 8px;
+    overflow: hidden;
+ }
+ .img{
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+ }
+ .img:hover {
+    transform: scale(1.15); 
+ }
+ .text-onimage{
+    position: absolute; /* Position the text relative to the container */
+    top: 88%; /* Vertically center the text */
+    left: 50%; /* Horizontally center the text */
+    transform: translate(-50%, -50%); /* Adjust text to be perfectly centered */
+    color: white; /* Text color */
+    font-size: 25px; /* Text size */
+    font-weight: bold; /* Make text bold */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+ }
+ p{
+    font-size: 20px;
+ }
+ #fotter{
+    height: 60px;
+
+    background-color: #999999;
+ }
+ #fotter-content{
+  /* margin-top: 50px; */
+ padding: 20px 0px 0px 100px;
+ font-size: 1.3rem;
+ 
+ }
+ /* banglore*/
+ #card1{
+   display: flex;
+   flex-wrap: wrap;
+   /* justify-content: space-around; */
+   justify-content: space-evenly;
+  align-items: flex-start;
+  margin-bottom: 70px;
+ 
+  
+
+ }
+ .card1{
+   width: 310px;
+   height: 370px;
+   position: relative;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19); 
+   transition: box-shadow 0.3s ease; 
+ border-radius: 10px;
+ margin-top: 50px;
+
+ }
+ #img1{
+    width: 100%;
+    height: 68%;
+    transition: opacity 0.8s ease;
+    position: absolute;
+    
+ }
+ #img1:hover{
+   opacity: 0.7; 
+ }
+ #b-home{
+   width: 100%;
+   height: 50vh;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   margin-top: 20px;
+ }
+ #b-home1{
+   width: 80%;
+   height: 0%;
+
+ }
+ #b-home2{
+   width: 80%;
+   height: 25%;
+   border-top: 1px solid black;  
+   border-bottom: 1px solid black;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   
+
+
+ }
+ .home2-content{
+   border-right: 1px black solid;
+   padding: 17px;
+   font-size: 1.2rem;
+ 
+
+ }
+ input{
+   padding: 13px 40px;
+   font-size: 1rem;
+ }
+ #p{
+   width: 50%;
+   background-color:orange;
+   position: absolute;
+   right: 0;
+ border-radius: 10px 0px 0px 10px;
+ height: 40px;
+ color: white;
+ font-size: 1.3rem;
+ /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+ font-weight: 500;
+ margin-top: 15px;
+
+ border: none;
+ }
+ #p1{
+   font-size: 3.3rem;
+ }
+ #p2{
+   font-size: 2.2rem;
+ }
+#card1-foot{
+   position: absolute;
+   bottom: 15%;
+   height: 16%;
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   padding: 5px;
+
+}
+#card2-foot{
+   position: absolute;
+   bottom: 1%;
+   height: 16%;
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   padding: 5px;
+   
+
+}
+.pincard1{
+  margin-left: 45%;
+}
+.pincard2{
+   margin-left: 50%;
+ }
+
+.nia{
+   width: 100%;
+   margin-top: 100px;
+ 
+}
+#nia-container{
+   width: 50%;
+   position: relative;
+}
+#nia-img{
+   width: 100%;
+   margin-left: 160px;
+}
+.nia-p{
+   width: 100%;
+   margin-left: 160px;
+
 }
